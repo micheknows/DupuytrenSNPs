@@ -1,3 +1,5 @@
+#  Here is the URL for the API  https://www.ncbi.nlm.nih.gov/home/develop/api/
+
 import requests
 dbs = 'pubmed'
 querys = 'Dupuytren+Contracture[mesh]+AND+Polymorphism,+Single+Nucleotide[mesh]'
