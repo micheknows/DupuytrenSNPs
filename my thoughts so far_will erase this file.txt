@@ -1,0 +1,2 @@
+I have created the snp.py file that downloads all SNPs (nucleotide variants) from a particlar chromosome.  In this case, chromosome 14, which is suspected to be related to Dupuytren's disease.
+
