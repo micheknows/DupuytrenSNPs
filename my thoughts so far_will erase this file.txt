@@ -1,2 +1,14 @@
-I have created the snp.py file that downloads all SNPs (nucleotide variants) from a particlar chromosome.  In this case, chromosome 14, which is suspected to be related to Dupuytren's disease.
+I have created the snp.py file that downloads all SNPs (nucleotide variants) from a particlar chromosome.  In this case, chromosome 14, which is suspected to be related to Dupuytren's disease. This download is going to be relevant no matter how I proceed because it gives information about each SNP (like position, normal nucleotide vs alternative nucleotide, etc)  Or, at least this CONCEPT will be relevant.  The problem is that Chromosome 14 is not the ONLY one associated with Dupuytren's.  So, I'm wondering if that means I needed to get all of them.....but that will be wayyyyyyy huge.  Or, perhaps I need to do this AFTER the PubMed step and only get the ones I can parse out of the text of the articles, regardless of what chromosome they happen to be on.  This this data becomes more relevant because it would also tell me the chromosome number and location.
+I have included comments in that file that describe what this data looks like when it is downloaded.
 
+
+
+I also have included the pubmed.py file.  There, I was playing around with just using search terms to find scientific published journal articles for Dupuytren's Disease that might include the phrase "Single Nucleotide".  While I wasn't necessarily having as much luck that way (the code worked -- just not as many results as I was hoping), I could do something different with this -- I could just get all articles related to Dupuytren's Disease and parse through the text to find patterns of "rs"+somenumbers that would indicate the name of a SNP.  Then, check the SNP names against the data downloaded from NCBI with the snp.py file.  This does find articles about Dupuytren's related to those SNPs.  But, does it REALLY do anything?  And the problem with this is... what if there are other possibilities that just haven't been connected with Dupuytren's yet and so there are no articles, but it might be a good starting point for research?  And there might be articles about those SNPs as related to OTHER topics.
+
+
+
+So, I am also trying to figure out how to use the API from either 
+  UCSC - https://genome.ucsc.edu/goldenPath/help/api.html
+  or
+  ENSEMBL - https://rest.ensembl.org/
+  And what I would like to get from one of those is -- the "next-door neighbor" SNPs (or other features) to the ones that have already been associated (or suspected) of being related to Dupuytren's.  These next-door-neighbors would be a good place to start for futher research.
